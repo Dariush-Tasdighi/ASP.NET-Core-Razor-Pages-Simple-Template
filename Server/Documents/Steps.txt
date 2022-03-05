@@ -11,19 +11,12 @@ Right click on Solution 'Template' -> Add -> New Solution Folder:
 
 	[Data Access Layer]
 	[Domain Models]
-	[Libraries]
 	[Presentation Layer]
 	[Shared]
 **************************************************
 
 **************************************************
 Step (3)
-**************************************************
-Right click on 'Server' project -> Set as Startup Project
-**************************************************
-
-**************************************************
-Step (4)
 **************************************************
 Right click on Solution 'Template' -> Add -> New Project... -> Class Library (.NET 6):
 
@@ -42,6 +35,12 @@ Right click on Solution 'Template' -> Add -> New Project... -> Class Library (.N
 		ViewModels
 
 Note: Delete all 'Class1.cs' Files in new class libraries
+**************************************************
+
+**************************************************
+Step (4)
+**************************************************
+Right click on 'Server' project -> Set as Startup Project
 **************************************************
 
 **************************************************
@@ -84,7 +83,7 @@ Right click on each project name -> Add -> Project Reference…
 
 	[Presentation Layer]
 
-		'Server'  project usese:
+		'Server' project usese:
 			Dtat
 			Domain
 			Resources

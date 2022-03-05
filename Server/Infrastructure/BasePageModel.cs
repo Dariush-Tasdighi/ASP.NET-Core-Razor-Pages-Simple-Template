@@ -1,6 +1,6 @@
 ﻿namespace Infrastructure
 {
-	public class BasePageModel :
+	public abstract class BasePageModel :
 		Microsoft.AspNetCore.Mvc.RazorPages.PageModel
 	{
 		public BasePageModel() : base()

@@ -7,16 +7,16 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\Domain\Domain.csproj" />
-	  <ProjectReference Include="..\Dtat\Dtat.csproj" />
-	  <ProjectReference Include="..\Persistence\Persistence.csproj" />
-	  <ProjectReference Include="..\Resources\Resources.csproj" />
-	  <ProjectReference Include="..\ViewModels\ViewModels.csproj" />
+		<ProjectReference Include="..\Domain\Domain.csproj" />
+		<ProjectReference Include="..\Dtat\Dtat.csproj" />
+		<ProjectReference Include="..\Persistence\Persistence.csproj" />
+		<ProjectReference Include="..\Resources\Resources.csproj" />
+		<ProjectReference Include="..\ViewModels\ViewModels.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="wwwroot\js\" />
-	  <Folder Include="wwwroot\lib\" />
+		<Folder Include="wwwroot\js\" />
+		<Folder Include="wwwroot\lib\" />
 	</ItemGroup>
 
 </Project>
