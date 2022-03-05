@@ -18,6 +18,15 @@ Right click on Solution 'Template' -> Add -> New Solution Folder:
 **************************************************
 Step (3)
 **************************************************
+Right click on Solution 'Template' -> Add -> New Project... -> ASP.NET Core Empty (.NET 6):
+
+	[Presentation Layer]
+		Server
+**************************************************
+
+**************************************************
+Step (4)
+**************************************************
 Right click on Solution 'Template' -> Add -> New Project... -> Class Library (.NET 6):
 
 	[Data Access Layer]
@@ -25,9 +34,6 @@ Right click on Solution 'Template' -> Add -> New Project... -> Class Library (.N
 
 	[Domain Models]
 		Domain
-
-	[Presentation Layer]
-		Server
 
 	[Shared]
 		Dtat
@@ -38,29 +44,9 @@ Note: Delete all 'Class1.cs' Files in new class libraries
 **************************************************
 
 **************************************************
-Step (4)
-**************************************************
-Right click on 'Server' project -> Set as Startup Project
-**************************************************
-
-**************************************************
 Step (5)
 **************************************************
-Update all '.csproj' files:
-
-	[Data Access Layer]
-		Persistence.csproj
-
-	[Domain Models]
-		Domain.csproj
-
-	[Presentation Layer]
-		Server.csproj
-
-	[Shared]
-		Dtat.csproj
-		Resources.csproj
-		ViewModels.csproj
+Right click on 'Server' project -> Set as Startup Project
 **************************************************
 
 **************************************************
@@ -103,6 +89,26 @@ Right click on each project name -> Add -> Project Reference…
 **************************************************
 Step (7)
 **************************************************
+Update all '.csproj' files:
+
+	[Data Access Layer]
+		Persistence.csproj
+
+	[Domain Models]
+		Domain.csproj
+
+	[Presentation Layer]
+		Server.csproj
+
+	[Shared]
+		Dtat.csproj
+		Resources.csproj
+		ViewModels.csproj
+**************************************************
+
+**************************************************
+Step (8)
+**************************************************
 Update some files in 'Server' project:
 
 	Program.cs
@@ -115,7 +121,7 @@ Update some files in 'Server' project:
 **************************************************
 
 **************************************************
-Step (8)
+Step (9)
 **************************************************
 Create some folders in 'Server' project:
 
@@ -136,7 +142,7 @@ Create some folders in 'Server' project:
 **************************************************
 
 **************************************************
-Step (9)
+Step (10)
 **************************************************
 Copy and paste some folder and files in below folders in 'Server' project:
 
@@ -186,7 +192,7 @@ Copy and paste some folder and files in below folders in 'Server' project:
 **************************************************
 
 **************************************************
-Step (10)
+Step (11)
 **************************************************
 Copy and paste 'libman.json' file in root of 'Server' project
 
@@ -196,7 +202,7 @@ Rebuild 'Server' project
 **************************************************
 
 **************************************************
-Step (11)
+Step (12)
 **************************************************
 Check all pages and their page models:
 
