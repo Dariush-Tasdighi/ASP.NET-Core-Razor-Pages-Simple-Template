@@ -1,0 +1,213 @@
+﻿**************************************************
+Step (1)
+**************************************************
+Create a new project -> Blank Solution -> Name: Template
+**************************************************
+
+**************************************************
+Step (2)
+**************************************************
+Right click on Solution 'Template' -> Add -> New Solution Folder:
+
+	[Data Access Layer]
+	[Domain Models]
+	[Libraries]
+	[Presentation Layer]
+	[Shared]
+**************************************************
+
+**************************************************
+Step (3)
+**************************************************
+Right click on 'Server' project -> Set as Startup Project
+**************************************************
+
+**************************************************
+Step (4)
+**************************************************
+Right click on Solution 'Template' -> Add -> New Project... -> Class Library (.NET 6):
+
+	[Data Access Layer]
+		Persistence
+
+	[Domain Models]
+		Domain
+
+	[Presentation Layer]
+		Server
+
+	[Shared]
+		Dtat
+		Resources
+		ViewModels
+
+Note: Delete all 'Class1.cs' Files in new class libraries
+**************************************************
+
+**************************************************
+Step (5)
+**************************************************
+Update all '.csproj' files:
+
+	[Data Access Layer]
+		Persistence.csproj
+
+	[Domain Models]
+		Domain.csproj
+
+	[Presentation Layer]
+		Server.csproj
+
+	[Shared]
+		Dtat.csproj
+		Resources.csproj
+		ViewModels.csproj
+**************************************************
+
+**************************************************
+Step (6)
+**************************************************
+Right click on each project name -> Add -> Project Reference…
+
+	[Data Access Layer]
+
+		'Persistence' project uses:
+			Dtat
+			Domain
+			ViewModels (If Needed!)
+
+	[Domain Models]
+
+		'Domain' project uses:
+			Dtat
+			Resources
+
+	[Presentation Layer]
+
+		'Server'  project usese:
+			Dtat
+			Domain
+			Resources
+			ViewModels
+			Persistence
+
+	[Shared]
+
+		Dtat
+		Resources
+
+		'ViewModels' project uses:
+			Domain
+			Resources
+**************************************************
+
+**************************************************
+Step (7)
+**************************************************
+Update some files in 'Server' project:
+
+	Program.cs
+
+	appsettings.json
+	appsettings.Development.json
+
+	[Properties]
+		launchSettings.json
+**************************************************
+
+**************************************************
+Step (8)
+**************************************************
+Create some folders in 'Server' project:
+
+	[Documents]
+
+	[wwwroot]
+		[css]
+		[fonts]
+		[images]
+		[js]
+		[lib]
+
+	[Pages]
+		[Errors]
+		[Shared]
+			[Layouts]
+			[PartialViews]
+**************************************************
+
+**************************************************
+Step (9)
+**************************************************
+Copy and paste some folder and files in below folders in 'Server' project:
+
+	[wwwroot]
+		favicon.ico
+
+		[css]
+			fontiran.css
+			site.css
+
+		[fonts]
+			[woff]
+			[woff2]
+
+		[images]
+			Dariush.jpg
+
+		[js]
+		[lib]
+
+	[Documents]
+		Readme.txt
+
+	[Infrastructure] [NEW]
+		BasePageModel.cs [NEW]
+
+	[Pages]
+		About.cshtml (About.cshtml.cs)
+		Contact.cshtml (Contact.cshtml.cs)
+		Index.cshtml (Index.cshtml.cs)
+
+		[Errors]
+			Error.cshtml (Error.cshtml.cs)
+			
+		[Shared]
+			[Layouts]
+				_layout.cshtml
+
+			[PartialViews]
+				_FavoriteIcon.cshtml
+				_Footer.cshtml
+				_Header.cshtml
+				_OpenGraph.cshtml
+				_Scripts.cshtml
+				_Seo.cshtml
+				_StyleSheets.cshtml
+**************************************************
+
+**************************************************
+Step (10)
+**************************************************
+Copy and paste 'libman.json' file in root of 'Server' project
+
+Check new libraries version
+
+Rebuild 'Server' project
+**************************************************
+
+**************************************************
+Step (11)
+**************************************************
+Check all pages and their page models:
+
+	Index
+	About
+	Contact
+
+Validate Home Page: https://validator.w3.org/
+
+In About.cshtml: anchor -> (mailto:), (tel:)
+
+Iranian CDN (Tanx Mr. Hossein Beigi): https://lib.arvancloud.com/
+**************************************************
