@@ -77,7 +77,7 @@ Right click on each project name -> Add -> Project Reference…
 
 	[Presentation Layer]
 
-		'Server' project usese:
+		'Server' project uses:
 			Dtat
 			Domain
 			Resources
